@@ -2,15 +2,19 @@ namespace task1;
 
 public class Car : IVehicle
 {
-    public int gazolineamount { get; set; }
+    public int Gazolineamount { get; set; }
+    public Car(int gazolineamount)
+    {
+        Gazolineamount += gazolineamount;
+    }
     public void Drive()
     {
-        if (gazolineamount > 0) System.Console.WriteLine("Driving");
+        if (Gazolineamount > 0) System.Console.WriteLine("Driving");
     }
 
     public bool Refuel(int gazoline)
     {
-        gazolineamount += gazoline;
+        Gazolineamount += gazoline;
         return true;
     }
 }

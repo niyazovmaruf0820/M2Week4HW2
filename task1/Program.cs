@@ -1,7 +1,6 @@
 ﻿using task1;
 
-Car car = new Car();
-car.gazolineamount = 100;
+Car car = new Car(100);
 car.Refuel(50);
-System.Console.WriteLine(car.gazolineamount);
+System.Console.WriteLine(car.Gazolineamount);
 car.Drive();
