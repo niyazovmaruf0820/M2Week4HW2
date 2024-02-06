@@ -5,7 +5,7 @@ public class Car : IVehicle
     public int Gazolineamount { get; set; }
     public Car(int gazolineamount)
     {
-        Gazolineamount += gazolineamount;
+        Gazolineamount = gazolineamount;
     }
     public void Drive()
     {
